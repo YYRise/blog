@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>屁狗多多</title>
+    <link>https://rise.github.io/</link>
+    <description>Recent content on 屁狗多多</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 03 May 2020 00:50:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://rise.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Post</title>
+      <link>https://rise.github.io/posts/a/first-post/</link>
+      <pubDate>Sun, 03 May 2020 00:50:27 +0800</pubDate>
+      
+      <guid>https://rise.github.io/posts/a/first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://rise.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 03 May 2020 00:47:19 +0800</pubDate>
+      
+      <guid>https://rise.github.io/posts/my-first-post/</guid>
+      <description>摘要 Domain Name System (DNS) 定位网络域名并解析其IP地址。对于攻击者是非常有用的武器，因为组织通常允许协议从受限制的网络中流出，并且常常不能充分监视其使用。这需要一点知识，但是精明的攻击者几乎可以在攻击链的每一步利用这些问题，包括侦察，命令和控制（C2），甚至数据过滤。在本章中，学习使用Go和第三方包如何写一个自己的工程来执行这些功能。
+首先解析主机名和IP地址，来显示能够枚举出的很多的DNS记录类型。然后使用前面几章中介绍的模式来构建一个大规模并发的子域猜测工具。最后，学会如何实现DNS服务和代理，然后使用DNS隧道来建立一个限制网络之外的C2通道!
+实现DNS客户端 开发这个复杂程序前，先让我们来熟悉一些客户端的操作。Go内置的 net包提供了很多功能，并支持大多数（如果不是全部）的记录类型。内置包的优点是简单易懂的API。例如LookupAddr(addr string)` 返回给定IP地址的主机名列表。劣势是不能指定目标服务，相反，内置包使用操作系统上配置的解析器。另一个缺点是不能详细即检查结果。
+使用Miek Gieben编写的名为Go DNS的第三方包来规避这些缺点，这是我们的首选DNS包，因为它是高度模块化，并经过良好的测试。使用下面的命令来安装：
+$ go get github.com/miekg/dns 安装好之后，就可以跟着接下来的示例代码操作了。首先执行记录查找，以便为主机名解析IP地址。
+检索A Records 让我们先从查找 fully qualified domain name (FQDN) 开始，其指定了主机在DNS层次结构中的确切位置。然后再尝试使用 DNS记录类型的 A record ，将FQDN解析为IP地址。使用 A records 将域名绑定到IP地址。清单5-1 是一个查找的例子：
+package main import &amp;#34;github.com/miekg/dns&amp;#34; func main() { var msg dns.Msg fqdn := dns.Fqdn(&amp;#34;stacktitan.com&amp;#34;) msg.SetQuestion(fqdn, dns.TypeA) dns.Exchange(&amp;amp;msg, &amp;#34;8.8.8.8:53&amp;#34;) } 清单 5-1:检索A Records (https://github.com/blackhat-go/bhg/ch-5/get_a/main.go/)
+先new一个Msg，然后调用 fqdn(string) 将域转换为可以与DNS服务器交换的 FQDN。下一步，调用 SetQuestion(string, uint16) 来修改 MSG 的内部状态，该函数使用 TypeA 表示专门查找 A record 。（TypeA 被定义为常量。在该包的文档中查看其他支持的类型。）最后，调用 Exchange(*Msg, string) 将消息发送到所提供的服务器地址，即本例中由谷歌操作的DNS服务器。</description>
+    </item>
+    
+  </channel>
+</rss>
