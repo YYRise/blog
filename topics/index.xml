@@ -2,14 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on 屁狗多多</title>
-    <link>https://yyrise.github.io/blog/topics/</link>
+    <link>rise.github.io/topics/</link>
     <description>Recent content in Topics on 屁狗多多</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 11 Mar 2020 23:33:03 +0800</lastBuildDate>
     
-	<atom:link href="https://yyrise.github.io/blog/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rise.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install or Config</title>
+      <link>rise.github.io/topics/install-or-config/</link>
+      <pubDate>Wed, 11 Mar 2020 23:33:03 +0800</pubDate>
+      
+      <guid>rise.github.io/topics/install-or-config/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>屁狗多多</title>
-    <link>rise.github.io/</link>
-    <description>Recent content on 屁狗多多</description>
+    <title>Install or Config on 屁狗多多</title>
+    <link>rise.github.io/topics/install-or-config/</link>
+    <description>Recent content in Install or Config on 屁狗多多</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2020 23:33:03 +0800</lastBuildDate>
     
-	<atom:link href="rise.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rise.github.io/topics/install-or-config/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>关于</title>
-      <link>rise.github.io/about/</link>
-      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>rise.github.io/about/</guid>
-      <description>这是关于页面，^^^^。</description>
-    </item>
-    
-    <item>
-      <title>第一篇文章</title>
-      <link>rise.github.io/post/my-first-post/</link>
-      <pubDate>Mon, 30 Nov 2020 23:33:03 +0800</pubDate>
-      
-      <guid>rise.github.io/post/my-first-post/</guid>
-      <description>这是第一篇文章。。。</description>
-    </item>
     
     <item>
       <title>本地目录配置多个远程 Git 仓库</title>
